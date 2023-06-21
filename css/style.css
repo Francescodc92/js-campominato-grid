@@ -39,7 +39,7 @@ form#game-settings button#button-start:hover {
 .game-container .game-cell-container {
   width: calc(100% / 10);
   height: 5rem;
-  padding: 0.625rem;
+  padding: 0.3125rem;
 }
 
 .game-container .game-cell-container.medium {

@@ -31,9 +31,9 @@ const createElementHTML = (index) => {
 
   return htmlCellContainer
 }
-const cellClicched = (e) => {
-  e.target.classList.add("clicked")
-  console.log(e.target.innerHTML)
+const cellClicched = function (e) {
+  this.classList.add("clicked")
+  console.log(this.innerHTML)
 }
 
 function gameStart(e) {
