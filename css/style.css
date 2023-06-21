@@ -6,10 +6,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-:root {
-  font-size: 62.5%;
+.game-container {
+  max-width: 62.5rem;
+  margin: 1.875rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid red;
 }
 
-body {
-  font-size: 1.6rem;
+.game-container .game-cell-container {
+  width: calc(100% / 10);
+  height: 5rem;
+  padding: 0.625rem;
+}
+
+.game-container .game-cell-container.medium {
+  width: calc(100% / 9);
+}
+
+.game-container .game-cell-container.easy {
+  width: calc(100% / 7);
+}
+
+.game-container .game-cell {
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+  border: 1px solid blue;
+  line-height: calc(5rem - 1.25rem);
+  text-align: center;
+  cursor: pointer;
 }
