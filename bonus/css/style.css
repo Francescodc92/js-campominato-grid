@@ -29,6 +29,10 @@ form#game-settings button#button-start:hover {
   animation-duration: 300ms;
 }
 
+select#difficulty-level {
+  padding: 5px 10px;
+}
+
 .game-container {
   max-width: 62.5rem;
   margin: 1.875rem auto;
@@ -37,6 +41,11 @@ form#game-settings button#button-start:hover {
 }
 
 .game-container .game-cell-container {
+  height: 5rem;
+  padding: 0.3125rem;
+}
+
+.game-container .game-cell-container.hard {
   width: calc(100% / 10);
   height: 5rem;
   padding: 0.3125rem;
