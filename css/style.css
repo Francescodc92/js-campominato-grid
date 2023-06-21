@@ -34,7 +34,6 @@ form#game-settings button#button-start:hover {
   margin: 1.875rem auto;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
 
 .game-container .game-cell-container {
@@ -55,10 +54,14 @@ form#game-settings button#button-start:hover {
   width: 100%;
   height: 100%;
   background-color: bisque;
-  border: 1px solid blue;
   line-height: calc(5rem - 1.25rem);
   text-align: center;
   cursor: pointer;
+}
+
+.game-container .game-cell.clicked {
+  background-color: rgb(69, 69, 223);
+  color: #fff;
 }
 
 @keyframes swing {
